@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Viktor Arcade — Шаг 1</title>
+    <meta name="description" content="Каталог мини-игр. Играй бесплатно прямо в браузере!" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>🎮 Viktor Arcade</h1>
+        <p class="muted"></p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="section">
+        <h2>Каталог игр</h2>
+        <div id="gamesGrid" class="grid">
+            <!-- карточки будут подгружены из games.json -->
+        </div>
+    </section>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">© 2025 MyGames</div>
+</footer>
+
+<!-- Модальное окно -->
+<div id="playerModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__dialog">
+        <header class="modal__header">
+            <h2 id="playerTitle">Загрузка игры…</h2>
+            <button class="btn btn--ghost" id="playerClose">✕</button>
+        </header>
+        <div class="modal__body">
+            <div class="player">
+                <div class="player__frame-wrap">
+                    <!-- Здесь будет iframe с игрой -->
+                    <iframe id="playerFrame" src="" frameborder="0" allow="fullscreen; gamepad"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="modal__footer">
+            <button class="btn" id="playerFullscreen">Полный экран</button>
+            <a class="btn btn--ghost" id="playerOpenNew" target="_blank" rel="noopener">Открыть в новой вкладке</a>
+        </footer>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

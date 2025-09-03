@@ -1,0 +1,18 @@
+[
+  {
+    "id": "balloons",
+    "title": "Balloons",
+    "desc": "Лопай шарики и ставь рекорды!",
+    "cover": "assets/img/balloons.png",
+    "url": "games/balloons/index.html",
+    "tags": ["arcade", "skill"]
+  },
+  {
+    "id": "tetris",
+    "title": "Cubes",
+    "desc": "Сбивай кубики.",
+    "cover": "assets/img/cubes.png",
+    "url": "https://example.org",
+    "tags": ["cubes"]
+  }
+]
